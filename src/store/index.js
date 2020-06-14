@@ -13,12 +13,12 @@ export default new Vuex.Store({
   },
   actions: {
     async fetchPatients({commit}) {
-        const res = await axios.get("http://my-json-server.typicode.com/Fahmiin-Abdullah/patients_list/patients");
-        commit('setPatients',res.data);
+      const res = await axios.get("http://my-json-server.typicode.com/Fahmiin-Abdullah/patients_list/patients");
+      commit('setPatients', res.data);
     },
     async fetchSinglePatient({commit}, id) {
-        const res = await axios.get(`http://my-json-server.typicode.com/Fahmiin-Abdullah/patients_list/patients/${id}`);
-        commit('setPatients',res.data);
+      const res = await axios.get(`http://my-json-server.typicode.com/Fahmiin-Abdullah/patients_list/patients/${id}`);
+      commit('setPatients', res.data);
     },
   },
   mutations: {

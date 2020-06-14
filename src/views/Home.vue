@@ -4,7 +4,7 @@
       <Patients />
     </b-container>
     <!-- <div v-for="patient in patients" v-bind:key="patient.id">{{patient.name}}</div> -->
-    
+
   </div>
 </template>
 

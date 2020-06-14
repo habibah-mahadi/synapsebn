@@ -6,8 +6,17 @@ import Patient from "../views/Patient.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/patient/:id', name: 'Patient', component: Patient, props:true},
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/patient/:id',
+    name: 'Patient',
+    component: Patient,
+    props:true
+  },
   {
     path: '/about',
     name: 'About',
